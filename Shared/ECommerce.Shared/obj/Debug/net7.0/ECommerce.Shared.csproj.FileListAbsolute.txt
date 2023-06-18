@@ -1,0 +1,12 @@
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\bin\Debug\net7.0\ECommerce.Shared.deps.json
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\bin\Debug\net7.0\ECommerce.Shared.dll
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\bin\Debug\net7.0\ECommerce.Shared.pdb
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ECommerce.Shared.csproj.AssemblyReference.cache
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ECommerce.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ECommerce.Shared.AssemblyInfoInputs.cache
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ECommerce.Shared.AssemblyInfo.cs
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ECommerce.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ECommerce.Shared.dll
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\refint\ECommerce.Shared.dll
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ECommerce.Shared.pdb
+C:\Projects\.NET-Core-Projects\ECommerceMicroservices\Shared\ECommerce.Shared\obj\Debug\net7.0\ref\ECommerce.Shared.dll

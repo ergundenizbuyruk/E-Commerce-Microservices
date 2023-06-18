@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BB37BA60-6B50-4D88-80B0-227FD5CF3082}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{E6C56510-B261-4980-AB09-2FF4F34270C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.IdentityServer", "ECommerce.IdentityServer\ECommerce.IdentityServer.csproj", "{9E2D34F0-B3CF-4D39-AFE8-DAD7981A1E71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{49159A5D-A359-4748-A139-ECFC8602EE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Shared", "Shared\ECommerce.Shared\ECommerce.Shared.csproj", "{ACB24698-2E55-4229-A830-1BA13F07478F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E2D34F0-B3CF-4D39-AFE8-DAD7981A1E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E2D34F0-B3CF-4D39-AFE8-DAD7981A1E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E2D34F0-B3CF-4D39-AFE8-DAD7981A1E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E2D34F0-B3CF-4D39-AFE8-DAD7981A1E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB24698-2E55-4229-A830-1BA13F07478F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB24698-2E55-4229-A830-1BA13F07478F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB24698-2E55-4229-A830-1BA13F07478F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB24698-2E55-4229-A830-1BA13F07478F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E2D34F0-B3CF-4D39-AFE8-DAD7981A1E71} = {E6C56510-B261-4980-AB09-2FF4F34270C3}
+		{ACB24698-2E55-4229-A830-1BA13F07478F} = {49159A5D-A359-4748-A139-ECFC8602EE33}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B455444-0028-4EC2-816F-D7BB0B8C8BDF}
+	EndGlobalSection
+EndGlobal

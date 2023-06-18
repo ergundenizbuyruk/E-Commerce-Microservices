@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RCCTeuQ91C4Sxd1fCGpU8K98byttR9gx2nhnf2qnksI=",
+  "Source": "ECommerce.IdentityServer",
+  "BasePath": "_content/ECommerce.IdentityServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
