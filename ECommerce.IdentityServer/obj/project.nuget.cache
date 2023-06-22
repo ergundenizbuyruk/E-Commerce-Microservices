@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ky7donf44zdGpH93apOh1dxu3+3DIJY1uLUGanTeD5xCNFQUfla20ttf1wtTra/Hx+AGfgMtHn10RBUQPdfbAg==",
+  "dgSpecHash": "nh0149t1TGwy1JJOPKJUInmx0nPqZK+mspmb/VpTGrRC16MgCXuC/djTrYb2YQBHtOWwtqt1AhzXhd86Hgz//w==",
   "success": true,
   "projectFilePath": "C:\\Projects\\.NET-Core-Projects\\ECommerceMicroservices\\ECommerce.IdentityServer\\ECommerce.IdentityServer.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,7 @@
     "C:\\Users\\ErgünDenizBuyruk\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ErgünDenizBuyruk\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\ErgünDenizBuyruk\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\ErgünDenizBuyruk\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\ErgünDenizBuyruk\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\ErgünDenizBuyruk\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\ErgünDenizBuyruk\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

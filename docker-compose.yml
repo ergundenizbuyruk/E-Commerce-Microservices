@@ -1,0 +1,40 @@
+version: "3.8"
+services:
+  inventorydb:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+  orderdb:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+  basketdb:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+  identitydb:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+  inventory.api:
+    image: "inventory.api"
+    build:
+      context: .
+      dockerfile: Services/ECommerce.Services.Inventory/Dockerfile
+  identityserver.api:
+    image: "identityserver.api"
+    build:
+      context: .
+      dockerfile: ECommerce.IdentityServer/Dockerfile
+  order.api:
+    image: "order.api"
+    build:
+      context: .
+      dockerfile: Services/ECommerce.Services.Order/Dockerfile
+  basket.api:
+    image: "basket.api"
+    build:
+      context: .
+      dockerfile: Services/ECommerce.Services.Basket/Dockerfile
+  gateway.api:
+    image: "gateway.api"
+    build:
+      context: .
+      dockerfile: Gateways/ECommerce.Gateway/Dockerfile
+volumes:
+  inventorydb_volume:
+  orderdb_volume:
+  basketdb_volume:
+  identitydb_volume:
