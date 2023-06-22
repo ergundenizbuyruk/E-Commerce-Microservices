@@ -1,6 +1,7 @@
 ﻿using ECommerce.Services.Inventory.Dtos;
 using ECommerce.Services.Inventory.Models;
 using ECommerce.Services.Inventory.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,6 +33,7 @@ namespace ECommerce.Services.Inventory.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Add([FromBody] ProductCreateDto product)
         {
             var result = await _productService.AddAsync(product);
@@ -39,6 +41,7 @@ namespace ECommerce.Services.Inventory.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _productService.DeleteAsync(id);
@@ -46,6 +49,7 @@ namespace ECommerce.Services.Inventory.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(ProductUpdateDto product)
         {
             var result = await _productService.UpdateAsync(product);

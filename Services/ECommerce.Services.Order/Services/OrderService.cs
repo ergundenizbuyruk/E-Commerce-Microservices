@@ -18,9 +18,10 @@ namespace ECommerce.Services.Order.Services
             _mapper = mapper;
         }
 
-        public async Task<ResponseDto<OrderDto>> AddAsync(OrderCreateDto orderCreateDto)
+        public async Task<ResponseDto<OrderDto>> AddAsync(OrderCreateDto orderCreateDto, Guid userId)
         {
             var order = _mapper.Map<Models.Order>(orderCreateDto);
+            order.UserId = userId;
             order.OrderDate = DateTime.Now;
 
             await _context.Orders.AddAsync(order);
@@ -51,7 +52,7 @@ namespace ECommerce.Services.Order.Services
             return ResponseDto<List<OrderDto>>.Success(_mapper.Map<List<OrderDto>>(orders), 200);
         }
 
-        public async Task<ResponseDto<List<OrderDto>>> GetAllByUserAsync(int userId)
+        public async Task<ResponseDto<List<OrderDto>>> GetAllByUserAsync(Guid userId)
         {
             var orders = await _context.Orders.Include(o => o.ProductOrders).Where(p => p.UserId == userId).ToListAsync();
 

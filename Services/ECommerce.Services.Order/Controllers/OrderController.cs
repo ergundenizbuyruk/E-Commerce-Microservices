@@ -1,7 +1,9 @@
 ﻿using ECommerce.Services.Order.Dtos;
 using ECommerce.Services.Order.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ECommerce.Services.Order.Controllers
 {
@@ -16,6 +18,7 @@ namespace ECommerce.Services.Order.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAll()
         {
             var result = await _orderService.GetAllAsync();
@@ -23,6 +26,7 @@ namespace ECommerce.Services.Order.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> Get(int id)
         {
             var result = await _orderService.GetAsync(id);
@@ -30,27 +34,25 @@ namespace ECommerce.Services.Order.Controllers
         }
 
         [HttpGet("{userId}")]
-        public async Task<IActionResult> GetAllByUser(int userId)
+        [Authorize]
+        public async Task<IActionResult> GetAllByUser()
         {
+            var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
             var result = await _orderService.GetAllByUserAsync(userId);
             return ActionResultInstance(result);
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Add([FromBody] OrderCreateDto order)
         {
-            var result = await _orderService.AddAsync(order);
-            return ActionResultInstance(result);
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var result = await _orderService.DeleteAsync(id);
+            var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var result = await _orderService.AddAsync(order, userId);
             return ActionResultInstance(result);
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> Update(OrderUpdateDto order)
         {
             var result = await _orderService.UpdateAsync(order);

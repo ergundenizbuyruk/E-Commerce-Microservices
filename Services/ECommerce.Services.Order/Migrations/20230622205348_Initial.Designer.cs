@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerce.Services.Order.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230621230356_Initial")]
+    [Migration("20230622205348_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -46,8 +46,8 @@ namespace ECommerce.Services.Order.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
