@@ -1,7 +1,6 @@
 ﻿using ECommerce.IdentityServer.Dtos;
 using ECommerce.IdentityServer.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.IdentityServer.Controllers

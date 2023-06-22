@@ -1,0 +1,7 @@
+Services
+-inventory => 5011
+-basket => 5013
+-order => 5015
+
+IdentityServer => 5001
+Gateway => 5000
