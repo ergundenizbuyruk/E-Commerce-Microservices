@@ -33,7 +33,7 @@ namespace ECommerce.Services.Order.Controllers
             return ActionResultInstance(result);
         }
 
-        [HttpGet("{userId}")]
+        [HttpGet()]
         [Authorize]
         public async Task<IActionResult> GetAllByUser()
         {

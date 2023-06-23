@@ -17,7 +17,7 @@ namespace ECommerce.IdentityServer.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateRole(CreateRoleDto createRoleDto)
         {
             var result = await _roleService.CreateRoleAsync(createRoleDto);
